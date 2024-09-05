@@ -1,0 +1,2 @@
+# AulaFastAPI
+Estudos sobre fastapi
