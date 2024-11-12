@@ -12,3 +12,11 @@ def test_read_root_deve_retornar_ok_e_ola_mundo():
 
     assert response.status_code == HTTPStatus.OK   # assert
     assert response.json() == {'message': 'Olá mundo!'}
+
+def test_read_root_deve_retornar_ok_e_ola_mundo_em_html():
+    client = TestClient(app)   # arrange
+
+    response = client.get('/home')  # act
+
+    assert response.status_code == HTTPStatus.OK   # assert
+    assert '<h1>Olá, mundo!</h1>' in response.text
