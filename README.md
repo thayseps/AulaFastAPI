@@ -1,2 +1,2 @@
 # AulaFastAPI
-Estudos sobre fastapi
+Construindo uma API com FASTApi para aprimorar meus conhecimentos
